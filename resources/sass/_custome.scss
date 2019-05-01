@@ -1,0 +1,149 @@
+//Custome standerd
+
+/* Start Variables */
+
+$primary-cl: #ddd;  
+
+$secondary-cl: #343a40;
+/* End Variables */
+
+body{
+    color: $primary-cl; 
+    background-color:#040404 ;
+}
+
+.a,
+.nav-link,
+.navbar-brand,
+.btn-link,
+.navbar-brand:hover{
+    color: $primary-cl; 
+}
+
+.text-light{
+    color: $primary-cl !important;
+}
+
+#app{ 
+    -wenkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 55555;
+    position: relative;
+    color: #FFF;
+    padding-bottom: 50px;
+}
+
+hr{
+    margin: .5em;
+}
+
+.btn:not(a),
+{
+    min-width: 85px;
+    padding: 3px 0;
+    font-size: 16px;
+    margin-top: 15px;
+    background-color: $secondary-cl;
+    color: $primary-cl;
+    border:1px solid $secondary-cl ;
+}
+
+.btn:not(a):hover,
+.form-control:focus{
+    color: $primary-cl;
+    background-color: #000;
+    border: 1px solid  #000;
+}
+
+h1,.h1{
+    font-size: 3rem;
+}
+
+.overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    color: #FFF;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+    z-index: -5;
+}
+
+a:not(.navbar-brand):hover{
+    color: $secondary-cl;
+}
+
+.card{
+    background-color:transparent;
+    border: 1px solid $primary-cl;
+}
+
+.card-body{
+    height: 100%;
+    width: 100%;
+}
+
+.card input,
+.form-control{
+    background-color: transparent;
+    color: #fff;
+}
+
+
+//Start textarea
+.ck-editor__editable {
+    min-height: 300px;
+}
+
+/* Start About Page */
+
+.about .h4{
+    margin-top: 15px;
+    font-size: 25px;
+    padding-right: 200px;
+}
+
+.about .pragraph{
+    padding-right: 100px;
+}
+
+/* End About Page */
+
+/* Start Service  Page */
+
+.service .title{
+    margin-top: 15px;
+}
+
+.service .image{
+    padding-right: 0;
+}
+
+.service .row:nth-child(3){
+    padding-left: 15px;
+}
+
+.service .row:nth-child(3) .middle{
+    margin-left: -6px;
+}
+
+.service .row div > p{
+}
+
+@media (max-width: 768px){// at screens more than 768px
+    .service .row div > p{
+        font-size: 2rem;
+    }
+}
+
+/* End Service  Page */
+
+/* Start login page */
